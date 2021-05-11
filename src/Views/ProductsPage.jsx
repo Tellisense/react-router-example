@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const ProductsPage = () => {
+const Products = () => {
+  const [products] = useState([
+    { id: 1, name: "Product 1" },
+    { id: 2, name: "Product 2" },
+    { id: 3, name: "Product 3" }
+  ])
+
+
   return (
     <div>
-      <h2>Products Page</h2>
+      <h1 className="text-4xl font-black ">Products Page</h1>
+      <ul>
+        <li>test</li>
+      </ul>
     </div>
-  )
+  );
+
 }
 
-export default ProductsPage
+export default Products;
