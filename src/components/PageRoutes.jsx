@@ -28,10 +28,12 @@ const PageRoutes = () => {
           path='/posts/:year?/:month?'
           render={props => <PostsPage {...props} />}
         />
+
+        <Redirect from='/messages' to='/posts' />
         <Route path='/admin' component={Dashboard} />
         <Route path='/not-found' component={NotFoundPage} />
         <Route path="/" exact component={HomePage} />
-        {/* <Redirect to="/not-found" /> */}
+        <Redirect to="/not-found" />
       </Container>
     </Switch>
   )

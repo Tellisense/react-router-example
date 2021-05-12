@@ -24,7 +24,7 @@ const HomePage = () => {
       <div>
         <button className="my-4 g-white hover:bg-gray-100 text-red-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow" onClick={gotoProductsPush}>Goto products page (push)</button>
 
-        <button className="my-4 g-white hover:bg-gray-100 text-red-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-8" onClick={gotoProductsReplace}>gotoProducts (replace)</button>
+        <button className="my-4 g-white hover:bg-gray-100 text-red-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-8" onClick={gotoProductsReplace}>goto Products (replace)</button>
       </div>
 
       <div>
