@@ -31,7 +31,7 @@ const PageRoutes = () => {
         <Route path='/admin' component={Dashboard} />
         <Route path='/not-found' component={NotFoundPage} />
         <Route path="/" exact component={HomePage} />
-        <Redirect to="/not-found" />
+        {/* <Redirect to="/not-found" /> */}
       </Container>
     </Switch>
   )
