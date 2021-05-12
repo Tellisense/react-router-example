@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav id="header" className="w-full z-30 top-10 py-1 bg-white shadow-lg ">
       <div className="w-full flex items-center justify-between mt-0 px-6 py-2">
-
+        <div className="text-2xl font-black" >React-Router</div>
         <div className="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
           <nav>
             <ul className="md:flex items-center justify-between text-base text-red-700 pt-4 md:pt-0">
