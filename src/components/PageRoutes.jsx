@@ -14,8 +14,8 @@ import PostsPage from '../views/PostsPage'
 
 const PageRoutes = () => {
   return (
-    <Switch>
-      <Container>
+    <Container>
+      <Switch>
         <Route
           path='/products/:id'
           render={props => <ProductDetails sortBy='newest' {...props} />}
@@ -34,8 +34,8 @@ const PageRoutes = () => {
         <Route path='/not-found' component={NotFoundPage} />
         <Route path="/" exact component={HomePage} />
         <Redirect to="/not-found" />
-      </Container>
-    </Switch>
+      </Switch>
+    </Container>
   )
 }
 
