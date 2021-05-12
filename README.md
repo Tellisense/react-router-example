@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+### React-Router example with Create-React-App and Tailwind CSS
+
+<img src="./rrd.png" align="left" hspace="10" vspace="6">
+
+#### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### Available Scripts
 
 In the project directory, you can run:
 
