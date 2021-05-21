@@ -1,8 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import logo from '../logo.png'
 
+
+
+
+
 const Navbar = () => {
+  const history = useHistory()
+
+  const handleLogin = () => {
+    history.push('/login')
+  }
+
+
+  const handleRegister = () => {
+    history.push('/register')
+  }
+
+
   return (
     <nav id="header" className="w-full z-30 top-10 py-1 bg-white shadow-lg ">
 
@@ -24,8 +40,8 @@ const Navbar = () => {
 
         <div className="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
           <div className="auth flex items-center w-full md:w-full">
-            <button className="bg-transparent text-gray-800  px-5 py-1 rounded border border-gray-300 mr-4 hover:bg-gray-100 hover:text-gray-700 whitespace-nowrap">Sign In</button>
-            <button className="bg-red-700 text-gray-200  px-5 py-1 rounded  hover:bg-red-400 hover:text-gray-100 whitespace-nowrap">Sign Up</button>
+            <button onClick={handleLogin} className="bg-transparent text-gray-800  px-5 py-1 rounded border border-gray-300 mr-4 hover:bg-gray-100 hover:text-gray-700 whitespace-nowrap">Sign In</button>
+            <button onClick={handleRegister} className="bg-red-700 text-gray-200  px-5 py-1 rounded  hover:bg-red-400 hover:text-gray-100 whitespace-nowrap">Sign Up</button>
           </div>
         </div>
       </div>

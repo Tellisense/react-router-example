@@ -10,6 +10,11 @@ import Dashboard from '../views/admin/dashboard'
 import ProductDetails from '../views/ProductDetails'
 import ProductsPage from '../views/ProductsPage'
 import PostsPage from '../views/PostsPage'
+import LoginPage from '../views/LoginPage'
+import RegisterPage from '../views/RegisterPage'
+import PasswordResetPage from '../views/PasswordResetPage'
+import PasswordRequestPage from '../views/PasswordRequestPage'
+import ConfirmRegistration from '../views/ConfirmRegistration'
 
 
 const PageRoutes = () => {
@@ -23,6 +28,30 @@ const PageRoutes = () => {
         <Route
           path='/products'
           render={props => <ProductsPage sortBy='newest' {...props} />}
+        />
+        <Route
+          path='/login'
+          render={props => <LoginPage sortBy='newest' {...props} />}
+        />
+        <Route
+          path='/register'
+          render={props => <RegisterPage sortBy='newest' {...props} />}
+        />
+        <Route
+          path='/request-password'
+          render={props => <PasswordRequestPage sortBy='newest' {...props} />}
+        />
+        <Route
+          path='/confirm-registration'
+          render={props => <ConfirmRegistration sortBy='newest' {...props} />}
+        />
+        <Route
+          path='/password-reset'
+          render={props => <PasswordResetPage sortBy='newest' {...props} />}
+        />
+        <Route
+          path='/login'
+          render={props => <LoginPage sortBy='newest' {...props} />}
         />
         <Route
           path='/posts/:year?/:month?'
